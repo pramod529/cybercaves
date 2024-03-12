@@ -306,8 +306,7 @@
 }
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/SAP\ Business\ One.jpg), center center no-repeat;
+  background: linear-gradient(#fff, #fff), url(), center center no-repeat;
   background-size: cover;
   background-position: center;
   transition: all-ease-in-out 1s;
@@ -815,7 +814,7 @@
 
 /* /* Featured Services Section
 --------------------------------*/
-/* 
+
 #featured-services {
   background: #000;
 }
@@ -825,7 +824,12 @@
 }
 
 #featured-services .box-bg {
-  background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%);
+  background-image: linear-gradient(
+    0deg,
+    #000000 0%,
+    #242323 50%,
+    #000000 100%
+  );
 }
 
 #featured-services i {
@@ -854,4 +858,4 @@
   line-height: 24px;
   color: #fff;
   margin-bottom: 0;
-}  */
+}
