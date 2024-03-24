@@ -306,10 +306,9 @@
 }
 
 .page-header {
-  background: linear-gradient(#fff, #fff), url(), center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/SAP\ Business\ One.jpg) center center no-repeat;
   background-size: cover;
-  background-position: center;
-  transition: all-ease-in-out 1s;
 }
 
 .page-header .breadcrumb-item + .breadcrumb-item::before {
@@ -714,7 +713,7 @@
   }
 }
 
-/* * {
+/* 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -723,7 +722,7 @@
   font-weight: normal;
 } */
 /* 
-* {
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -769,93 +768,426 @@
 /* Services Section
 --------------------------------*/
 
-#services {
-  background: #fff;
+/* /* Featured Services Section
+--------------------------------*/
+/*** Testimonial ***/
+.testimonial {
+  background: linear-gradient(rgba(1, 10, 30, 0.3), rgba(3, 27, 78, 0.3)),
+    url(../img/sap3.jpg) left center no-repeat;
   background-size: cover;
-  padding: 60px 0 40px 0;
 }
 
-#services .box {
-  margin-bottom: 30px;
+.testimonial-item img {
+  width: 60px !important;
+  height: 30px !important;
+  border-radius: 30px;
 }
 
-#services .icon {
-  float: left;
+.testimonial-carousel .owl-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
 }
 
-#services .icon i {
-  color: #18d26e;
-  font-size: 36px;
-  line-height: 1;
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+  margin-left: 15px;
+  color: var(--bs-primary);
+  font-size: 30px;
+  line-height: 0;
   transition: 0.5s;
 }
 
-#services .title {
-  margin-left: 60px;
-  font-weight: 700;
-  margin-bottom: 15px;
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+  color: var(--bs-dark);
+}
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.testimonial-carousel .owl-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+}
+
+/*** Contact ***/
+@media (min-width: 992px) {
+  .contact-info::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    border-left: 1px dashed rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .contact-info::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0px;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed rgba(255, 255, 255, 0.2);
+  }
+}
+
+/*** Footer ***/
+.footer {
+  background: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
+    url(../img/AdobeStock_Preview.jpg) center center no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 992px) {
+  .footer::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 10%;
+    top: 0;
+    left: 20%;
+    border-left: 1px dashed rgba(6, 21, 43, 0.863);
+  }
+}
+
+/*--------------------------------------------------------------
+# Why Choose Us Section
+--------------------------------------------------------------*/
+
+.why-us {
+  padding-bottom: 0;
+}
+
+/* .why-us .img-bg {
+  min-height: 500px;
+  background-size: cover;
+} */
+.why-us .slides {
+  background-color: #f7f9fc;
+}
+
+.why-us h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+.why-us h4 {
   font-size: 18px;
-}
-
-#services .title a {
-  color: #111;
-}
-
-#services .box:hover .title a {
-  color: #18d26e;
-}
-
-#services .description {
-  font-size: 14px;
-  margin-left: 60px;
-  line-height: 24px;
-  margin-bottom: 0;
-}
-
-/* /* Featured Services Section
---------------------------------*/
-
-#featured-services {
-  background: #000;
-}
-
-#featured-services .box {
-  padding: 30px 20px;
-}
-
-#featured-services .box-bg {
-  background-image: linear-gradient(
-    0deg,
-    #000000 0%,
-    #242323 50%,
-    #000000 100%
-  );
-}
-
-#featured-services i {
-  color: #18d26e;
-  font-size: 48px;
-  display: inline-block;
-  line-height: 1;
-}
-
-#featured-services h4 {
   font-weight: 400;
-  margin: 15px 0;
-  font-size: 18px;
+  color: #29486a;
+  font-family: var(--font-secondary);
 }
 
-#featured-services h4 a {
+.why-us .swiper {
+  margin: 140px 140px 120px 140px;
+  overflow: hidden;
+}
+
+.why-us .swiper-button-prev:after,
+.why-us .swiper-button-next:after {
+  font-size: 20px;
+  color: var(--color-secondary);
+}
+
+.why-us .swiper-button-prev {
+  left: 60px;
+}
+
+.why-us .swiper-button-next {
+  right: 80px;
+}
+
+.why-us .swiper-pagination {
+  margin-top: 10px;
+  position: relative;
+}
+
+.why-us .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--color-secondary);
+}
+
+.why-us .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 1200px) {
+  .why-us .swiper {
+    margin: 60px 60px 40px 60px;
+  }
+
+  .why-us .swiper-button-prev,
+  .why-us .swiper-button-next {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .why-us .swiper {
+    margin: 40px 40px 20px 40px;
+  }
+}
+
+.page-about .why-us {
+  padding: 0 0 80px 0;
+}
+
+/*** Facts ***/
+.fact-item {
+  transition: 0.5s;
+}
+
+.fact-item:hover {
+  margin-top: -10px;
+  background: #ffffff !important;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
+}
+
+/* ************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #343536;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.wrapper {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.box-area {
+  width: 200px;
+  margin: 20px;
+  padding: 25px;
+  background-color: #222;
+  color: #2dc5f3;
+  box-shadow: inset -2px -2px 5px rgba(9, 232, 248, 0.776),
+    inset 3px 3px 5px rgba(81, 174, 224, 0.07);
+  transition: all 0.6s ease-in-out;
+}
+.box-area .icon-area {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.icon-area i {
+  font-size: 70px;
+  color: #fff;
+  transition: all 0.9s ease-in-out;
+  text-shadow: 0 0 10px #219ff3, 0 0 10px rgba(33, 156, 243, 1);
+}
+.box-area h6 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-family: meddon;
+  text-transform: capitalize;
+  transition: all 0.9s ease-in-out;
+}
+.box-area:hover {
+  background-color: #161619;
+  transform: scale(1.15);
+}
+.box-area:hover i {
+  transform: rotate(360deg);
+  text-shadow: 0 0 10px rgb(85, 174, 233), 0 0 10px rgba(233, 85, 99, 1);
+}
+.box-area:hover h6 {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(233, 85, 99, 1), 0 0 10px rgba(233, 85, 99, 1);
+}
+
+@media (max-width: 767px) {
+  .box-area:hover {
+    transform: scale(1);
+  }
+}
+
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+.pr_90 {
+    padding-right: 90px;
+}
+.pl_90 {
+    padding-left: 90px;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+/* @media (min-width: 992px)
+.col-md-7 {
+    width: 58.33333333%;
+} */
+
+
+#call-to-action {
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/banner_about.jpg) fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+#call-to-action h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action p {
+  color: #ffffff;
+}
+
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
   color: #fff;
 }
 
-#featured-services h4 a:hover {
-  color: #18d26e;
+#call-to-action .cta-btn:hover {
+  background: #18d26e;
+  border: 2px solid #5acfef;
 }
 
-#featured-services p {
-  font-size: 14px;
-  line-height: 24px;
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 50vh;
+  background: url("../img/sap-addon.png") center center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .container {
+  padding-top: 80px;
+}
+
+
+#sr {
+  width: 100%;
+  height: 20vh;
+  background: url("../img/icons/5bd0bdc12d414-wallpaper-preview.jpg") center center;
+  background-size: cover;
+  position: relative;
+}
+
+#sr .container {
+  padding-top: 10px;
+}
+
+#call-to-juni {
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/icons/orange-1536x1022.jpg) fixed center center;
+  background-size: cover;
+  padding: 150px 0;
+}
+
+#call-to-juni h3 {
   color: #fff;
-  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-juni p {
+  color: #ffffff;
+}
+#call-to-juni .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #29486a;
+}
+
+#call-to-juni .cta-btn:hover {
+  background: #18d26e;
+  border: 2px solid #5acfef;
+}
+
+/* industries */
+#call-to-react {
+  background: linear-gradient(rgba(24, 110, 84, 0.1), rgba(0, 0, 0, 0.1)), url(../img/295288_HeroL-3840x1044.webp) fixed center center;
+  background-size: cover;
+  padding: 150px 0;
+}
+
+#call-to-react h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-react p {
+  color: #ffffff;
+}
+#call-to-react .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform:capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 3px solid #ffffff;
+  color: #fff;
+  background-color: #230bab;
+
+}
+
+#call-to-react .cta-btn:hover {
+  background: #630e51;
+  border: 3px solid #5acfef;
+  
+
 }

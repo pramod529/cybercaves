@@ -1,73 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CYBERCAVES</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <head>
-        <meta charset="utf-8">
-        <title>CYBERCAVES</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
 
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+      <div class="container">
+        <div class="d-flex justify-content-between topbar">
+          <div class="top-info">
+            <small class="me-3 text-white-50"
+              ><a href="#"
+                ><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a
+              >Hyderabad</small
+            >
+            <small class="me-3 text-white-50"
+              ><a href="#"
+                ><i class="fas fa-envelope me-2 text-secondary"></i></a
+              >ceo@cybercaves.com</small
+            >
+          </div>
+          <div id="note" class="text-secondary d-none d-xl-flex">
+            <small>Note : We help you to Grow your Business</small>
+          </div>
+          <div class="top-link">
+            <a
+              href=""
+              class="bg-light nav-fill btn btn-sm-square rounded-circle"
+              ><i class="fab fa-facebook-f text-primary"></i
+            ></a>
+            <a
+              href=""
+              class="bg-light nav-fill btn btn-sm-square rounded-circle"
+              ><i class="fab fa-twitter text-primary"></i
+            ></a>
+            <a
+              href="https://www.instagram.com"
+              class="bg-light nav-fill btn btn-sm-square rounded-circle"
+              ><i class="fab fa-instagram text-primary"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/cybercaves"
+              class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"
+              ><i class="fab fa-linkedin-in text-primary"></i
+            ></a>
+          </div>
         </div>
-        <!-- Spinner End -->
+      </div>
+    </div>
+    <!-- Topbar End -->
 
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-dark py-2 d-none d-md-flex">
-            <div class="container">
-                <div class="d-flex justify-content-between topbar">
-                    <div class="top-info">
-                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Hyderabad</small>
-                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>ceo@cybercaves.com</small>
-                    </div>
-                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
-                    <div class="top-link">
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
-                        <a href="https://www.instagram.com" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
-                        <a href="https://www.linkedin.com/cybercaves" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
-
-        <!-- Navbar Start -->
-        <div class="container-fluid bg-primary">
-            <div class="container">
-                <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                    <a href="index.html"><img src="img/logo.png" class="navbar-brand">
-                        <h1 class="text-white fw-bold d-block"> 
-
-                        </h1>
-                    </a>
-                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+      <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg py-0">
+          <a href="index.html"
+            ><img src="img/logo.png" class="navbar-brand" />
+            <h1 class="text-white fw-bold d-block"></h1>
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler me-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
             class="collapse navbar-collapse bg-transparent"
             id="navbarCollapse"
           >
@@ -77,807 +118,1518 @@
                 class="nav-item nav-link active text-secondary"
                 >Home</a
               >
-              <a href="products.html" class="nav-item nav-link">Products</a>
-              <a href="sap services & support.html" class="nav-item nav-link"
-                >SAP Services & Support</a
+                  <a href="products.html" class="nav-item nav-link">Products</a>
+                  
+                    <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">SAP Services & Support</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="sap implementation.html" class="dropdown-item">SAP Implementation</a>
+                                    <a href="sap upgarde services.html" class="dropdown-item">SAP Upgrade Services</a>
+                                     <a href="sap migration services.html" class="dropdown-item">SAP Migration Servies</a>
+                                    <a href="sap support & services.html" class="dropdown-item active">SAP Support & Services</a>
+                                    <a href="sap customized addon development.html" class="dropdown-item active">SAP Customized Addon Development</a>
+                                    <a href="networking & it services.html" class="dropdown-item active">Networking & IT Services</a>
+                                </div>
+                            </div>
+              <a href="industries.html" class="nav-item nav-link">Industries</a>
+
+              <a href="about company.html" class="nav-item nav-link"
+                >About Company</a
               >
-                <a href="industries.html" class="nav-item nav-link">Industries</a>
-             
-              <a href="about company.html" class="nav-item nav-link">About Company</a>
-             
+
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
           </div>
-                    <div class="d-none d-xl-flex flex-shirink-0">
-                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
-                            <a href="" class="position-relative animated tada infinite">
-                                <i class="fa fa-phone-alt text-white fa-2x"></i>
-                                <div class="position-absolute" style="top: -7px; left: 20px;">
-                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="d-flex flex-column pe-4 border-end">
-                            <span class="text-white-50">Have any questions?</span>
-                            <span class="text-secondary">Call: + 91 9948410113</span>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center ms-10 search-icon">
-                            <a href="https://google.com" target="_blank"><i class="bi bi-search text-white fa-2x"></i> </a>
-                        </div>
-                    </div>
-                </nav>
+          <div class="d-none d-xl-flex flex-shirink-0">
+            <div
+              id="phone-tada"
+              class="d-flex align-items-center justify-content-center me-4"
+            >
+              <!-- <a href="" class="position-relative animated tada infinite">
+                <i class="fa fa-phone-alt text-white fa-2x"></i>
+                <div class="position-absolute" style="top: -7px; left: 20px">
+                  <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                </div>
+              </a> -->
             </div>
-        </div>
-        <!-- Navbar End -->
+            <div class="d-flex flex-column pe-4 border-end">
+              <span class="text-white-50">Have any questions?</span>
+              <span class="text-secondary">Call: + 91 9948410113</span>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center ms-10 search-icon"
+            >
+              <a href="https://google.com" target="_blank"
+                ><i class="bi bi-search text-white fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
 
-        
-        <!-- Page Header Start -->
-        <div class="container-fluid page-header py-5">
-            <div class="container text-center py-5">
-                <!-- <img src="img/1494437862409.jpg" width="500"  class="img-fluid" alt="First slide"> -->
-                <h1 class="display-2 text-secondary mb-4 animated slideInDown">SAP Business One</h1>
-                <nav aria-label="breadcrumb animated slideInDown">
-                    
-                        <div class="breadcrumb-item"></div>
-                        <p class="mb-4 text-white fs-5 animated fadeInDown">Discover a Single Affordable Solution for Managing your entire Company  </p>
-                       
-                </nav>
-            </div>
+    <!-- Page Header Start -->
+    <div class="card bg-dark text-white">
+      <div class="text-center">
+        <img
+          src="img/SAP Business One.jpg"
+          class="card-img rounded"
+          alt="..."
+        />
+        <div class="card-img-overlay col-lg-7 col-xl-7 px-1">
+          <Br>
+          <h1 class="text-white">Sap Business One</h1>
+        </Br>
+          <div class="text-center col-lg-12 col-sm-5 py-1">
+            <p class="card-text">
+              Discover a single, affordable solution for <br>managing your entire
+              company
+            </p>
+            <p>
+
+            </p>
+          </div>
+          
+          <button type="button" class="btn btn-light" >request a demo</button>
+          
+          <a
+            href="https://www.youtube.com/watch?v=CHe6LLvkDnY&t=1s"
+            class="btn btn-secondary rounded px-1 py-1 text-secondary"
+            target="_blank"
+          >
+            <button type="button" class="btn btn-primary">
+              watch the video
+            </button>
+            
+          </a>
         </div>
-        <!-- Page Header End -->
-         
-        <!-- <div class="container-fluid py-5 my-5">
+      </div>
+    </div>
+   
+    <!-- Page Header End -->
+
+    <!-- <div class="container-fluid py-5 my-5">
             <div class="container py-5">
                 <div class="row g-5"> -->
-                    <div class="container-fluid page-header py-5">
+    <!-- <div class="container-fluid page-header py-5">
             <div class="container text-center py-5">
-                <img src="img/SAP Business One.jpg" width="1520px" height="600px"  class="img-fluid" alt="First slide">
+                <img src="img/SAP Business One.jpg" width="1550px" height="150px"  class="img-fluid" alt="First slide">
+                            </div>
+                        </div> -->
+    <!-- </div> -->
+
+    <!-- <div class="col-lg-4 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+
+                      <iframe width="550" height="315" src="https://www.youtube.com/embed/CHe6LLvkDnY?si=GR31eCgLZkDx1IIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     
+                    < <a href="https://www.youtube.com/watch?v=As4uDKSFw_I" class="btn btn-secondary rounded-pill px-2 py-2 text-white">Watch the video                 
+                        </a> -->
+
+                          <p>
+
+                          </p>
+                          <p>
+
+                          </p>
+
+                        <!-- ======= Why Choose Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="text-center">What is Business One?</h3>
+          <p class="text-center">A single, affordable solution to manage your entire small business–from accounting and financials, purchasing,<br> inventory, sales and customer relationships to reporting and analytics.</p>
+
+        </div>
+
+        <div class="row py-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-5 img-bg"><img src="img/what-is-spa-business-one.jpg"></div>
+          <div class="col-xl-7 col-sm-12 position-relative">
+
+            <div class="slides-1 swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <!-- <h3 class="mb-3">Let's grow your business together</h3>
+                    <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</h4> -->
+                    <p>Gain greater control over your business or subsidiary with SAP
+              Business One. Streamline key processes, gain greater insight into
+              your business, and make decisions based on real-time information –
+              so you can drive profitable growth.</p>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <p>On-premise or cloud deployment</p>
+                    <p>Integrated business intelligence</p>
+                    <p>Integration with the SAP HANA platform</p>
+                    <p>Quick deployment</p>
+                  </div>
+                </div><!-- End slide item -->
+                  <a
+              href="https://en.wikipedia.org/wiki/SAP_Business_One"
+              class="btn btn-secondary rounded-pill px-1 py-2 text-primary"
+              >Read the Solution Overview                 
+            </a>
+            <a
+            href="https://www.youtube.com/watch?v=As4uDKSFw_I"
+            class="btn btn-secondary rounded px-1 py-1 text-primary"
+            target="_blank"
+          >
+            <button type="button" class="btn btn-primary">
+              watch the video
+            </button>
+          </a>
+                <div class="swiper-slide">
+                  <div class="item">
+                  </div>
+                </div><!-- End slide item -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+ 
+        </div>
+      </div>
+    </section><!-- End Why Choose Us Section -->
+
+
+
+    
+    <!-- Fact Start -->
+    <!-- Fact End -->
+    <!-- About Start -->
+    <!-- <div class="container-fluid py-5 my-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div
+            class="col-lg-7 col-md-6 col-sm-9 wow fadeIn"
+            data-wow-delay=".5s"
+          >
+            <div class="h-100 position-relative"> -->
+              <!-- <img src="img/2.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;"> -->
+              <!-- <div class="position-absolute w-100">
+                <h2 class="text-center">What is Business One?</h2>
+                <p class="text-center">
+                  A single, affordable solution to manage your entire small
+                  business – from accounting and financials, purchasing,
+                  inventory, sales and customer relationships to reporting and
+                  analytics.
+                </p>
+                <p>
+
+                </p>
+                <img
+                  src="img/what-is-spa-business-one.jpg"
+                  height="200px"
+                  width="450px"
+                  class="img-fluid w-400 rounded"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 col-sm-7">
+          <p>
+          </Br>
+          </p>
+        </Br>
+      </Br>
+      <p>
+
+
+
+      </p>
+    </Br>
+    <p>
+
+    </p>
+  </Br>
+  <p>
+
+  </p>
+            <h1 class="text-secondary"></h1>
+            <p>
+              Gain greater control over your business or subsidiary with SAP
+              Business One. Streamline key processes, gain greater insight into
+              your business, and make decisions based on real-time information –
+              so you can drive profitable growth.
+            </p>
+            <ul>
+              <li>On-premise or cloud deployment</li>
+              <li>Integrated business intelligence</li>
+              <li>Integration with the SAP HANA platform</li>
+              <li>Quick deployment</li>
+            </ul>
+            <a
+              href="https://en.wikipedia.org/wiki/SAP_Business_One"
+              class="btn btn-secondary rounded-pill px-1 py-2 text-primary"
+              >Read the Solution Overview                 
+            </a>
+            <a
+            href="https://www.youtube.com/watch?v=As4uDKSFw_I"
+            class="btn btn-secondary rounded px-1 py-1 text-primary"
+            target="_blank"
+          >
+            <button type="button" class="btn btn-primary">
+              watch the video
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- About End -->
+   
+  
+   <div class="container-fluid testimonial py-4">
+        <div class="container pt-5">
+            <div class="row gy-5 gx-0">
+                <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <p class="display-8 text-white mb-2">And now there is a SAP Business One <br> your business today and tomorrow and the future.</p>
+                    <p>
+                    </p>
+                  </Br>
+                    <a href="" class="btn btn-primary py-2 px-5 rounded-pill text-secondary">More</a>
+                </div>
+                <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white p-5">
+                        <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.1s">
+                            <div class="testimonial-item">
+                                <div class="icon-box-primary mb-4">
+                                    <i class="bi bi-chat-left-quote text-dark"></i>
+                                </div>
+                                <p class="fs-7 mb-1">You can now deploy SAP Business One Cloud for a monthly licence grows your SAP Business One solution grows with you.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shirink-0" src="img/icons/cloud-computing.png" alt="">
+                                    <div class="ps-3">
+                                        <h5 class="mb-1">Cloud</h5>
+                                        <span class="text-primary"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="icon-box-primary mb-4">
+                                    <i class="bi bi-chat-left-quote text-dark"></i>
+                                </div>
+                                <p class="fs-7 mb-1">Manage your business one the move and mobilise your sales team with SAP Business One mobile apps, so your are in control, avalible anytime, anywhere and on my mobile device.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shirink-0" src="img/icons/mobile.png" alt="">
+                                    <div class="ps-3">
+                                        <h5 class="mb-1">Mobile</h5>
+                                        <span class="text-primary"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="icon-box-primary mb-4">
+                                    <i class="bi bi-chat-left-quote text-dark"></i>
+                                </div>
+                                <p class="fs-7 mb-1">If you want to deploy your SAP Business One  solution in the
+                                      office (on premise)- that's just fine too, we have a
+                                      deployment solution to suit all our customers needs.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shirink-0" src="img/icons/on premise.png" alt="">
+                                    <div class="ps-3">
+                                        <h5 class="mb-1">On Premise</h5>
+                                        <span class="text-primary"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    <!-- </div> -->
-                    
-                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-
-                     <iframe width="550" height="315" src="https://www.youtube.com/embed/CHe6LLvkDnY?si=GR31eCgLZkDx1IIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                     
-                    <!-- <a href="https://www.youtube.com/watch?v=As4uDKSFw_I" class="btn btn-secondary rounded-pill px-2 py-2 text-white">Watch the video                 
-                        </a> -->
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- <div class="container-fluid services py-3 my-6">
+      <div class="container py-3">
+        <div
+          class="text-center mx-auto pb-7 wow fadeIn"
+          data-wow-delay=".3s"
+          style="max-width: 500px"
+        >
+          <h5 class="text-primary">
+            And now there is a SAP Business One your business today and tomorrow
+            and the future.
+          </h5>
+        </div>
+        <div class="row g-3 services-inner">
+          <div class="col-md-2 col-lg-3 wow fadeIn" data-wow-delay=".3s">
+            <div class="services-item bg-light">
+              <div class="p-3 text-center services-content">
+                <div class="services-content-icon">
+                  <i class="fa fa-code fa-7x mb-4 text-primary"></i> -->
+                  <!-- <img class="rounded-circle" src="img/icons/cloud-computing.png" />
+                  <h4 class="mb-2">Cloud</h4>
+                  <p class="mb-2">
+                    You can now deploy SAP Business One Cloud for a monthly
+                    licence grows your SAP Business One solution grows with you.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary text-white px-1 py-1 rounded-pill"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 wow fadeIn" data-wow-delay=".5s">
+            <div class="services-item bg-light">
+              <div class="p-3 text-center services-content">
+                <div class="services-content-icon"> -->
+                  <!-- <i class="fa fa-file-code fa-7x mb-4 text-primary"></i> -->
+                  <!-- <img  class="rounded-circle" src="img/icons/mobile.png" />
+                  <h4 class="mb-2">Mobile</h4>
+                  <p class="mb-2">
+                    Manage your business one the move and mobilise your sales
+                    team with SAP Business One mobile apps, so your are in
+                    control, avalible anytime, anywhere and on my mobile device.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary text-white px-1 py-1 rounded-pill"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="col-md-3 col-lg-3 wow fadeIn" data-wow-delay=".5s">
+            <div class="services-item bg-light">
+              <div class="p-3 text-center services-content">
+                <div class="services-content-icon"> -->
+                  <!-- <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i> -->
+                  <!-- <img  class="rounded-circle" src="img/icons/on premise.png" />
+                  <h4 class="mb-2">On Premise</h4>
+                  <p class="mb-2">
+                    If you want to deploy your SAP Business One solution in the
+                    office (on premise)- that's just fine too, we have a
+                    deployment solution to suit all our customers needs.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary text-white px-1 py-1 rounded-pill"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- webclient -->
+          <div class="container-fluid py-5 my-5">
+            <div class="container py-2">
+              <div class="row g-3">
+                <div
+                  class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                  data-wow-delay=".3s"
+                >
+                  <div class="h-100 position-relative">
+                    <div class="position-absolute w-100">
+                      <h5>SAP Business One Web Client</h5>
+                      <p>
+                        SAP Business One, Web client brings you the best of all
+                        worlds. Based on SAP Fiori design principles, it
+                        encapsulates the core processes and business logic of
+                        the SAP Business One solution.
+                      </p>
+
+                      <h5>
+                        SAP Business One Web Client Read and write from and to
+                        the same company database.
+                      </h5>
+                      <p>
+                        Create, process, and update marketing document master
+                        data, including approval processes. With SAP Business
+                        One, Web client. you can create and track activities and
+                        benefit from sophisticated analytical charting
+                        capabilities and predefined analytics content. In
+                        addition, the client can be deployed either in the cloud
+                        or on-premise, including side-by-side use.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-4 col-md-6 col-sm-12 wow fadeIn"
+                  data-wow-delay=".5s"
+                >
+                  <h1 class="text-secondary"></h1>
+
+                  <title>Watch the video</title>
+                  <iframe
+                    width="400"
+                    height="300"
+                    src="https://www.youtube.com/embed/oJtiUHjbA1E?si=5CrHKQHCtxoxsQyQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+
+                  <!-- <a href="" class="btn btn-secondary rounded-pill px-3 py-4 text-white">Watch the video                 
+                        </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid py-5 my-5">
+            <div class="container py-2">
+              <div class="row g-3">
+                <div
+                  class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                  data-wow-delay=".3s"
+                >
+                  <div class="h-100 position-relative">
+                    <div class="position-absolute w-100">
+                <h5>SAP Business One Sales App</h5>
+                <p>
+                  Empower your entire sales organization to manage information
+                  on the move anytime, anywhere, and on any mobile device.
+                </p>
+              <img
+              src="img/1638913669432.png"
+              height="200"
+              width="200"
+              class="img-fluid w-400 rounded"
+              alt=""
+            />
+                
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-5 col-md-6 col-sm-9 wow fadeIn"
+            data-wow-delay=".5s"
+          >
+            <h1 class="text-secondary"></h1>
+
+            <iframe
+                  width="500"
+                  height="300"
+                  src="https://www.youtube.com/embed/W2IFE3k_Ojg?si=XFhlnNYqm9DydOGk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</Br>
+<p>
+
+</p>
+    <div class="container-fluid py-5 my-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div
+            class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+            data-wow-delay=".3s"
+          >
+            <div class="h-100 position-relative">
+              <div class="position-absolute w-100">
+                <h5>SAP Business One Service App</h5>
+                <p>
+                  SAP Business One Service mobile app for iOS and Android helps
+                  your service team manage their workload anywhere. With the
+                  app, they can view customer service records, ticket
+                  information, check stock, place an order and capture a
+                  customer signature, for more effective customer service
+                  management on the move.
+                </p>
+                <img
+                  src="img/1617036731936.png"
+                  height="500"
+                  width="550"
+                  class="img-fluid w-400 rounded"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 wow fadeIn"
+            data-wow-delay=".5s"
+          >
+            <h1 class="text-secondary"></h1>
+
+            <title>Watch the video</title>
+            <iframe
+              width="500"
+              height="300"
+              src="https://www.youtube.com/embed/W-JTrexTuCo?si=D1xjYpxHaYHsGlM4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Service Start -->
+    <div class="container-fluid container-service py-5">
+        <div class="container pt-5">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="display-6 mb-2 btn btn-primary">Sap Business One Key Futures</p>
+                <h4 class="mb-5"> Everything you need for your SME</h4>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                      <i class="fa-sharp fa-solid fa-gears fa-spin fa-2xl" style="color: #143061;"></i>
+                        </div>
+                        <h5 class="mb-3">End-to-End Automation</h4>
+                            <p class="mb-4">Automotive your business Processes and gain complete control of your business.</p>
+                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                           <i class="fa-solid fa-image fa-spin fa-2xl" style="color: #648caa;"></i>
+                        </div>
+                        <h5 class="mb-3">Accurate Real-time Reporting & Analytics</h4>
+                            <p class="mb-4">Run your business optimally with SAP Bsiness One accurate  reports and dashboards.</p>
                    
-        <!-- Fact Start -->
-        <!-- Fact End -->
-        <!-- About Start -->
-        <div class="container-fluid py-5 my-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
-                        <div class="h-75 position-relative">
-                            <!-- <img src="img/2.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;"> -->
-                            <div class="position-absolute w-100">
-                                <h2>What is Business One?</h2>
-                                <p>A single, affordable solution to manage your entire small business – from accounting and financials, purchasing, inventory, sales and customer relationships to reporting and analytics.</p>
-                                <img src="img/what-is-spa-business-one.jpg" height="500" width="500" class="img-fluid w-400 rounded" alt="">
-                            </div>
-                        </div>
+                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h1 class="text-secondary"></h1>
-                        <p>Gain greater control over your business or subsidiary with SAP Business One. Streamline key processes, gain greater insight into your business, and make decisions based on real-time information – so you can drive profitable growth.</p>
-                    <ul>
-                    <li> On-premise or cloud deployment</li>
-                    <li> Integrated business intelligence</li>
-                    <li> Integration with the SAP HANA platform </li>
-                    <lI> Quick deployment</lI>
-                    </ul>
-                        <a href="https://en.wikipedia.org/wiki/SAP_Business_One" class="btn btn-secondary rounded-pill px-3 py-2 text-white">•Quick deployment
-                                 Read the Solution Overview                 
-                        </a>
-                        
-                         
-                     <iframe width="500" height="315" src="https://www.youtube.com/embed/As4uDKSFw_I?si=ho0-WEjaXYCCoVXe&amp;start=24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                     
-                    <a href="" class="btn btn-secondary rounded-pill px-2 py-2 text-white">Watch the video                 
-                        </a>
-                        </div>
                 </div>
-            </div>
-        </div>
-                      
-        <!-- About End -->
-        <div class="container-fluid services py-5 my-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 650px;">
-                    <h5 class="text-primary">And now there is a SAP Business One your business 
-                        today and tomorrow and the future.
-                    </h5>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                            <i class="fa-solid fa-globe fa-spin fa-2xl" style="color: #a33380;"></i>
+                        </div>
+                        <h5 class="mb-3">Complete Operational Visibility & Control</h4>
+                            <p class="mb-4">Improve business visibility and performance with SAP
+                                            Bsuiness One powerful data analytics.</p>
+                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                    </div>
                 </div>
-                <div class="row g-5 services-inner">
-                    <div class="col-md-4 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <!-- <i class="fa fa-code fa-7x mb-4 text-primary"></i> -->
-                                    <img src="img/icons/cloud-computing.png">
-                                    <h4 class="mb-3">Cloud</h4>
-                                    <p class="mb-4">You can now deploy SAP Business One Cloud for a monthly licence grows your SAP Business One solution grows with you.  
-                                                </p>
-                                 <a href="" class="btn btn-secondary text-white px-3 py-2 rounded-pill">Read More</a>
-                                </div>
-                            </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                         <i class="fa-solid fa-users-rectangle fa-spin fa-2xl" style="color: #2258b4;"></i>
                         </div>
+                        <h5 class="mb-3">Access Data Anytime, Anywhere</h4>
+                            <p class="mb-4">Get access to more relevant data and grow your business
+                                        anytime,from anywhere.</p>
+                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <!-- <i class="fa fa-file-code fa-7x mb-4 text-primary"></i> -->
-                                    <img src="img/icons/mobile.png">
-                                    <h4 class="mb-3">Mobile</h4>
-                                    <p class="mb-4">Manage your business one the move and mobilise your sales team with SAP Business One mobile apps, so your are in control, avalible anytime, anywhere and on my mobile device.
-                                    </p>
-                                    <a href="" class="btn btn-secondary text-white px-3 py-2  rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <!-- <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i> -->
-                                    <img src="img/icons/on premise.png">
-                                    <h4 class="mb-3">On Premise</h4>
-                                    <p class="mb-4"> If you want to deploy your SAP Business One 
-                                        solution in the office (on premise)- that's just fine too, we have a deployment solution to suit all our customers needs.
-                                    </p>
-                                    <a href="" class="btn btn-secondary text-white px-3 py-2  rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                       
-        <!-- webclient -->
-        <div class="container-fluid py-5 my-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
-                        <div class="h-100 position-relative">
-                            <div class="position-absolute w-100">
-                                <h5>SAP Business One Web Client                                                            </h5>
-                                <p>SAP Business One, Web client brings you the best of all worlds. Based on SAP Fiori design principles, it encapsulates the core processes and business logic of the 
-                                SAP Business One solution.
-                                    </p>
-                                    
-                                    <h5>SAP Business One Web Client                              Read and write from and to the same company database.
-                                        </h5>
-                                        <p>
-                                        Create, process, and update marketing document master data,                  
-                                    including approval processes. With SAP Business One, Web client. 
-                                    you can create and track activities and benefit from sophisticated 
-                                    analytical charting capabilities and predefined analytics content. 
-                                    In addition, the client can be deployed either in the cloud or 
-                                    on-premise, including side-by-side use.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h1 class="text-secondary"></h1>
-                        
-                    
-                         <title>Watch the video</title>
-                     <iframe width="500" height="315" src="https://www.youtube.com/embed/oJtiUHjbA1E?si=5CrHKQHCtxoxsQyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                     
-                    <!-- <a href="" class="btn btn-secondary rounded-pill px-3 py-4 text-white">Watch the video                 
-                        </a> -->
-                        </div>
                 </div>
-            </div>
-        </div>
-                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
-                        <div class="h-100 position-relative">
-                            <div class="position-absolute w-100">
-                                <h5>                                                 
-                                    SAP Business One Sales App
-                                </h5>
-                                 <p>
-                                    Empower your entire sales organization to manage 
-                                    information on the move anytime, anywhere, 
-                                    and on any mobile device.
-                                    </p>
-
-                     <iframe width="500" height="315" src="https://www.youtube.com/embed/W2IFE3k_Ojg?si=XFhlnNYqm9DydOGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                     
-                            </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                       <i class="fa-solid fa-chart-simple fa-spin fa-2xl" style="color: #736a0d;"></i>
                         </div>
+                        <h5 class="mb-3">Quick ROI</h4>
+                            <p class="mb-4">Reduce business costs and gain quick ROI with seamless
+                                     business operations.</p>
+                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        
-                        <h1 class="text-secondary"></h1>
-                       
-                                    <img src="img/1638913669432.png" height="250" width="300" class="img-fluid w-400 rounded" alt="">
-                                
-                        </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container-fluid py-5 my-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
-                        <div class="h-100 position-relative">
-                            <div class="position-absolute w-100">
-                                <h5>
-                                    SAP Business One Service App 
-                                  </h5>
-                                <p>SAP Business One Service mobile app for iOS and Android 
-                                    helps your service team manage their workload anywhere. 
-                                    With the app, they can view customer service records, 
-                                    ticket information, check stock, place an order and capture 
-                                    a customer signature, for more effective customer service 
-                                    management on the move.
-                                    </p>
-                                    <img src="img/1617036731936.png" height="500" width="550" class="img-fluid w-400 rounded" alt="">
-                            </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="icon-box-primary mb-4">
+                         <i class="fa-solid fa-tachograph-digital fa-spin fa-2xl" style="color: #04132f;"></i>  
                         </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h1 class="text-secondary"></h1>
-                        
-                    
-                         <title>Watch the video</title>
-                    <iframe width="500" height="315" src="https://www.youtube.com/embed/W-JTrexTuCo?si=D1xjYpxHaYHsGlM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                     
-                        </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Team Start -->
-        <div class="container-fluid pb-5 mb-5 team">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">SAP Business One Key Features
-                        Everything you need for your SME</h5>
-                    <p></p>
-                </div>
-                <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/icons/3d-design.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">End-to-End Automation</h4>
-                                    <p class="m-0">Automotive your business Processes and gain complete control of your business.</p>
-                                    <a href="" class="btn btn-secondary rounded-pill px-3 py-2  text-white">More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/icons/3d-modeling (1).png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Accurate Real-time Reporting & Analytics</h4>
-                                    <p class="m-0">Run your business optimally with SAP Bsiness One accurate reports and dashboards.</p>
-                                    <a href="" class="btn btn-secondary rounded-pill px-3 py-2  text-white">More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/icons/computer.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Complete Operational Visibility & Control</h4>
-                                    <p class="m-0">Improve business visibility and performance with SAP Bsuiness One powerful data analytics.</p>
-                                    <a href="" class="btn btn-secondary rounded-pill px-3 py-2  text-white">More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/icons/object.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Access Data Anytime, Anywhere</h4>
-                                    <p class="m-0">Get access to more relevant data and grow your business anytime,from anywhere.</p>
-                                    <a href="" class="btn btn-secondary rounded-pill px-3 py-2  text-white">More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/icons/dimensions.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Quick ROI</h4>
-                                    <p class="m-0">Reduce business costs and gain quick ROI with seamless business operations.</p>
-                                    <a href="" class="btn btn-secondary rounded-pill px-3 py-2  text-white">More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="img/icons/resize.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">Custmomized Features</h4>
-                                    <p class="m-0">Meet industry-specific requirements with customized features.</p>
-                                    <a href="" class="btn btn-secondary rounded-pill px-3 py-2  text-white">More Details</a>
-                                </div>
-                            </div>
-                        </div>
+                        <h5 class="mb-3">Custmomized Features</h4>
+                            <p class="mb-4"> Meet industry-specific requirements with customized
+                                     features.</p>
+                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Team End -->
+    </div>
+    <!-- Service End -->
 
-        <!-- start Financial management  -->
-        
-        <div class="container-fluid project py-5 my-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 650px;">
-                    <img src="img/4787743.png" class="img-fluid w-100 h-100 rounded-pill" alt="">
-                    
-                    <h5 class="text-primary">Financial management</h5>
-                    <h5>Improve margins, reduce errors, and drive more profitable decision-making with a complete set of tools for streamlined financial operations.</h5>
-                </div>
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <p>
-                                    Automate the handling of all key accounting processes such as journal entries, accounts receivable and accounts payable.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Accounting</h4>
-                                        <p class="m-0 text-white">Automate the handling of all key accounting processes such as journal entries, accounts receivable and accounts payable.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/7076235.png.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Manage cash flow, track fixed assets, control budgets, and monitor project costs with greater accuracy and efficiency.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Controlling</h4>
-                                        <p class="m-0 text-white">Manage cash flow, track fixed assets, control budgets, and monitor project costs with greater accuracy and efficiency.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/blog-1.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Simplify the management of your fixed assets with a virtual function, eliminating the need for repetitive manual data entry.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Fixed asset management</h4>
-                                        <p class="m-0 text-white">Simplify the management of your fixed assets with a virtual function, eliminating the need for repetitive manual data entry.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Process reconciliations, bank statements, and payments faster through various methods including checks, cash, and bank transfers.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Banking and reconciliation</h4>
-                                        <p class="m-0 text-white">Process reconciliations, bank statements, and payments faster through various methods including check, cash, and bank transfers.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Create standard or customized reports from real-time data to improve your business planning and audit review processes.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Financial reporting and analysis</h4>
-                                        <p class="m-0 text-white">Create standard or customized reports from real-time data to improve your business planning and audit review processes.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    You can use a very simple warehouse where inventory management takes place solely at storage location level.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Accounting integration & Reporting</h4>
-                                        <p class="m-0 text-white">Generate integrated reports with real-time data and display them in various report formats or dashboards to gain an overview of what matters most to your business, whether you’re using your desktop or your mobile device.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Team Start -->
+    <!-- <div class="container-fluid pb-5 mb-5 team">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeIn"
+          data-wow-delay=".3s"
+          style="max-width: 600px"
+        >
+          <h5 class="text-primary">
+            SAP Business One Key Features Everything you need for your SME
+          </h5>
+          <p></p>
         </div>
-        <!-- End Financial management -->
-
-        <!-- start Purchasing and Inventory Control -->
-        <div class="container-fluid project py-5 my-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <img src="img/standard-quality-control-concept-m.jpg" class="img-fluid w-100 rounded-pill" alt="">
-                    
-                    <h5 class="text-primary">Purchasing and Inventory Control</h5>
-                    <h5>Optimize purchasing practices and control costs by managing the complete order-to-pay cycle including receipts, invoices, returns, and payments.</h5>
+        <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
+          <div class="rounded team-item">
+            <div class="team-content">
+              <div class="team-img-icon">
+                <div class="team-img rounded-circle">
+                  <img
+                    src="img/icons/3d-design.png"
+                    class="img-fluid w-100 rounded-circle"
+                    alt=""
+                  />
                 </div>
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <p>
-                                    Streamline procurement processes such as requisition requests, purchase order and good receipts creation, and returns management. Improve audits by matching documents, viewing information trails, and handling multiple currencies.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Procurement</h4>
-                                        <p class="m-0 text-white">Streamline procurement processes such as requisition requests, purchase order and good receipts creation, and returns management. Improve audits by matching documents, viewing information trails, and handling multiple currencies. </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/7076235.png.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                   Centralize purchasing processes by managing detailed data in a user-friendly interface. View account balance and purchase analyses while maintaining detailed item purchasing information with price lists and tax information. 
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Master data management</h4>
-                                        <p class="m-0 text-white">Manage cash flow, track fixed assets, control budgets, and monitor project costs with greater accuracy and efficiency.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/blog-1.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Benefit from real-time synchronization of goods receipts and inventory levels in the warehouse to perform purchase planning with ease and create an accounts payable invoice automatically from a purchase order or goods receipt.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Warehouse and accounting integration</h4>
-                                        <p class="m-0 text-white">Simplify the management of your fixed assets with a virtual function, eliminating the need for repetitive manual data entry.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Lower costs and optimize your supply-chain relationships. Process accounts payable invoices, cancellations, and credit memos with a purchase order reference; plan material needs; and schedule purchases accordingly.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Accounts payable</h4>
-                                        <p class="m-0 text-white">Process reconciliations, bank statements, and payments faster through various methods including check, cash, and bank transfers.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                   Generate integrated reports with real-time data and display them in various report formats or dashboards to gain an overview of what matters most to your business, whether you’re using your desktop or your mobile device.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Reporting</h4>
-                                        <p class="m-0 text-white">Create standard or customized reports from real-time data to improve your business planning and audit review processes.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="team-name text-center py-3">
+                  <h4 class="">End-to-End Automation</h4>
+                  <p class="m-0">
+                    Automotive your business Processes and gain complete control
+                    of your business.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary rounded-pill px-3 py-2 text-white"
+                    >More Details</a
+                  >
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="rounded team-item">
+            <div class="team-content">
+              <div class="team-img-icon">
+                <div class="team-img rounded-circle">
+                  <img
+                    src="img/icons/3d-modeling (1).png"
+                    class="img-fluid w-100 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name text-center py-3">
+                  <h4 class="">Accurate Real-time Reporting & Analytics</h4>
+                  <p class="m-0">
+                    Run your business optimally with SAP Bsiness One accurate
+                    reports and dashboards.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary rounded-pill px-3 py-2 text-white"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded team-item">
+            <div class="team-content">
+              <div class="team-img-icon">
+                <div class="team-img rounded-circle">
+                  <img
+                    src="img/icons/computer.png"
+                    class="img-fluid w-100 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name text-center py-3">
+                  <h4 class="">Complete Operational Visibility & Control</h4>
+                  <p class="m-0">
+                    Improve business visibility and performance with SAP
+                    Bsuiness One powerful data analytics.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary rounded-pill px-3 py-2 text-white"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded team-item">
+            <div class="team-content">
+              <div class="team-img-icon">
+                <div class="team-img rounded-circle">
+                  <img
+                    src="img/icons/object.png"
+                    class="img-fluid w-100 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name text-center py-3">
+                  <h4 class="">Access Data Anytime, Anywhere</h4>
+                  <p class="m-0">
+                    Get access to more relevant data and grow your business
+                    anytime,from anywhere.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary rounded-pill px-3 py-2 text-white"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded team-item">
+            <div class="team-content">
+              <div class="team-img-icon">
+                <div class="team-img rounded-circle">
+                  <img
+                    src="img/icons/dimensions.png"
+                    class="img-fluid w-100 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name text-center py-3">
+                  <h4 class="">Quick ROI</h4>
+                  <p class="m-0">
+                    Reduce business costs and gain quick ROI with seamless
+                    business operations.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary rounded-pill px-3 py-2 text-white"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded team-item">
+            <div class="team-content">
+              <div class="team-img-icon">
+                <div class="team-img rounded-circle">
+                  <img
+                    src="img/icons/resize.png"
+                    class="img-fluid w-100 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name text-center py-3">
+                  <h4 class="">Custmomized Features</h4>
+                  <p class="m-0">
+                    Meet industry-specific requirements with customized
+                    features.
+                  </p>
+                  <a
+                    href=""
+                    class="btn btn-secondary rounded-pill px-3 py-2 text-white"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div> -->
+    <!-- Team End
 
-        <!-- End Purchasing and Inventory Control -->
+    start Financial management 
 
-        <!-- starts Sales and Customer Management -->
-        <div class="container-fluid project py-5 my-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <img src="img/sap-sales.png" class="img-fluid w-100 h-100 rounded-pill" alt="">
-                    <a href= "https://www.youtube.com/watch?v=EWo1ibCYJio" class="btn btn-secondary rounded-pill px-2 py-2 text-secondary"target="_blank">
-                    <button >Watch the video</button>
-                </a>
-                    
-                    <h5 class="text-primary">Sales and Customer Management</h5>
-                    <h6>Oversee the entire sales process and customer lifecycle more efficiently – from initial contact to final sale, after-sales service, and support.</h6>
-                </div>
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <p>
-                                    Track all sales opportunities and lead activities throughout the sales cycle, from the first contact to deal closing. 
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Sales and opportunity management</h4>
-                                        <p class="m-0 text-white">Automate the handling of all key accounting processes such as journal entries, accounts receivable and accounts payable.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/7076235.png.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Create, manage, and analyze marketing activities to turn prospects into customers and grow sales and profitability.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Marketing campaign management</h4>
-                                        <p class="m-0 text-white">Manage cash flow, track fixed assets, control budgets, and monitor project costs with greater accuracy and efficiency.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/blog-1.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Store all critical customer data in one place by synchronizing and managing customer contacts stored in Microsoft Outlook.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Customer management</h4>
-                                        <p class="m-0 text-white">Simplify the management of your fixed assets with a virtual function, eliminating the need for repetitive manual data entry.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Craft and manage warranty contracts and service agreements efficiently, and enter and respond to service calls quickly.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Service management</h4>
-                                        <p class="m-0 text-white">Process reconciliations, bank statements, and payments faster through various methods including check, cash, and bank transfers.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Design detailed reports on all aspects of the sales process – from forecasting to pipeline tracking – by using templates.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Reporting and analysis</h4>
-                                        <p class="m-0 text-white">Create standard or customized reports from real-time data to improve your business planning and audit review processes.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                    Empower your entire sales organization to manage information on the move anytime, anywhere, and on any mobile device.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Mobile sales</h4>
-                                        <p class="m-0 text-white">Generate integrated reports with real-time data and display them in various report formats or dashboards to gain an overview of what matters most to your business, whether you’re using your desktop or your mobile device.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid project py-5 my-5">
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeIn"
+          data-wow-delay=".3s"
+          style="max-width: 650px"
+        >
+          <img
+            src="img/4787743.png"
+            class="img-fluid w-100 h-100 rounded-pill"
+            alt=""
+          />
+
+          <h5 class="text-primary">Financial management</h5>
+          <h5>
+            Improve margins, reduce errors, and drive more profitable
+            decision-making with a complete set of tools for streamlined
+            financial operations.
+          </h5>
         </div>
-        <!-- End Sales and Customer Management -->
-
-        <!-- starts Accurate Real-Time Reporting & Analytics -->
-        <div class="container-fluid project py-5 my-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 700px;">
-                    <img src="img/05_SAP-Analytics-Cloud.webp" class="img-fluid w-100 rounded-circle" alt="">
-                    
-                    <h6 class="text-primary">Next-generation Business Intelligence, Planning and Predictive Analytics, Learn about the simple and effective cloud solution that combines business intelligence, predictive analytics, and planning functions.</h6>
+         <div class="row g-5">
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+            <div class="project-item">
+              <div class="project-img">
+                <p>
+                  Automate the handling of all key accounting processes such as
+                  journal entries, accounts receivable and accounts payable.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Accounting</h4>
+                    <p class="m-0 text-white">
+                      Automate the handling of all key accounting processes such
+                      as journal entries, accounts receivable and accounts
+                      payable.
+                    </p>
+                  </a>
                 </div>
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <p>
-                                    Design intuitive, interactive dashboards and reports that answer your most pressing questions. Managers can also track revenues, costs, and cash flow accurately; assess performance; and take swift corrective action.
-                                </p>
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Dashboards and reports</h4>
-                                        <p class="m-0 text-white">Design intuitive, interactive dashboards and reports that answer your most pressing questions. Managers can also track revenues, costs, and cash flow accurately; assess performance; and take swift corrective action. </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <!-- <img src="img/7076235.png.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <p>
-                                   Access information faster and evaluate it with powerful analytics in real-time. With SAP Business One you can simplify data searching and the on-demand creation of standard or ad hoc reports. 
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary"> Real-time analytics</h4>
-                                        <p class="m-0 text-white">Manage cash flow, track fixed assets, control budgets, and monitor project costs with greater accuracy and efficiency.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+              </div>
             </div>
-         <!-- end Accurate Real-Time Reporting & Analytics -->
-
-        <!-- Footer Start -->
-         <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
-            <div class="container pt-5 pb-4">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <a href="index.html">
-                            <img src="img/logo.png" />
-                            <h1 class="text-white fw-bold d-block"></h1>
-                        </a>
-                        <p class="mt-4 text-light">CyberCaves is a SAP development and Implementation partner company to Grow without limits.</p>
-                        <div class="d-flex hightech-link">
-                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
-                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
-                             <a href="https://www.instagram.com/cybercaves" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
-                            <a href="https://www.linkedin.com/cybercaves" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>   
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-secondary">Short Link</a>
-                        <div class="mt-4 d-flex flex-column short-link">
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
-                            <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-secondary">Help Link</a>
-                        <div class="mt-4 d-flex flex-column help-link">
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
-                            <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-secondary">Contact Us</a>
-                        <div class="text-white mt-4 d-flex flex-column contact-link">
-                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Hyderabad</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +91 9948410113</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> ceo@cybercaves.com</a>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+            <div class="project-item">
+              <div class="project-img">
+                 <img src="img/7076235.png.jpg" class="img-fluid w-100 rounded" alt="">
+                <p>
+                  Manage cash flow, track fixed assets, control budgets, and
+                  monitor project costs with greater accuracy and efficiency.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Controlling</h4>
+                    <p class="m-0 text-white">
+                      Manage cash flow, track fixed assets, control budgets, and
+                      monitor project costs with greater accuracy and
+                      efficiency.
+                    </p>
+                  </a>
                 </div>
-                <hr class="text-light mt-5 mb-4">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start">
-                        <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Your Site Name</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        <span class="text-light">Designed By@Suji</span>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+            <div class="project-item">
+              <div class="project-img">
+                <img src="img/blog-1.jpg" class="img-fluid w-100 rounded" alt="">
+                <p>
+                  Simplify the management of your fixed assets with a virtual
+                  function, eliminating the need for repetitive manual data
+                  entry.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Fixed asset management</h4>
+                    <p class="m-0 text-white">
+                      Simplify the management of your fixed assets with a
+                      virtual function, eliminating the need for repetitive
+                      manual data entry.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+            <div class="project-item">
+              <div class="project-img">
+                <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
+                <p>
+                  Process reconciliations, bank statements, and payments faster
+                  through various methods including checks, cash, and bank
+                  transfers.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Banking and reconciliation</h4>
+                    <p class="m-0 text-white">
+                      Process reconciliations, bank statements, and payments
+                      faster through various methods including check, cash, and
+                      bank transfers.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+            <div class="project-item">
+              <div class="project-img">
+                 <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
+                <p>
+                  Create standard or customized reports from real-time data to
+                  improve your business planning and audit review processes.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">
+                      Financial reporting and analysis
+                    </h4>
+                    <p class="m-0 text-white">
+                      Create standard or customized reports from real-time data
+                      to improve your business planning and audit review
+                      processes.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+            <div class="project-item">
+              <div class="project-img">
+               <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="">
+                <p>
+                  You can use a very simple warehouse where inventory management
+                  takes place solely at storage location level.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">
+                      Accounting integration & Reporting
+                    </h4>
+                    <p class="m-0 text-white">
+                      Generate integrated reports with real-time data and
+                      display them in various report formats or dashboards to
+                      gain an overview of what matters most to your business,
+                      whether you’re using your desktop or your mobile device.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Footer End -->
+      </div>
+    </div>
 
+      End Financial management -->
+  </Br>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+    <!-- start Purchasing and Inventory Control -->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Financial management</h3>
+        <p>Improve margins, reduce errors, and drive more profitable decision-making with a complete set of tools for streamlined financial operations.</p>
+        <a class="cta-btn" href="financial managment.html">More To Click</a>
+      </div>
+      </section>
+    </Br>
+      <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Purchasing & Inventory Control</h3>
+        <p>Call Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a class="cta-btn" href="purchasing & inventory control.html">More To Click</a>
+      </div>
+    </section>
+  </Br>
+  <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Sales & Customer Management</h3>
+        <p>Oversee the entire sales process and customer lifecycle more efficiently – from initial contact to final sale, after-sales service, and support.</p>
+        <a class="cta-btn" href="sales & customer managment.html">More To Click</a>
+      </div>
+    </section>
+  </Br>
+  <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Accurate Real-Time Reporting & Analytics</h3>
+        <p>Oversee the entire sales process and customer lifecycle more efficiently – from initial contact to final sale, after-sales service, and support.</p>
+        <a class="cta-btn" href="accurate real-time reporting & analytics.html">More To Click</a>
+      </div>
+    </section>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  </Br>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <!-- Page end -->
+     
+        <!-- <div class="row g-5">
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+            <div class="project-item">
+              <div class="project-img">
+                <p>
+                  Streamline procurement processes such as requisition requests,
+                  purchase order and good receipts creation, and returns
+                  management. Improve audits by matching documents, viewing
+                  information trails, and handling multiple currencies.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Procurement</h4>
+                    <p class="m-0 text-white">
+                      Streamline procurement processes such as requisition
+                      requests, purchase order and good receipts creation, and
+                      returns management. Improve audits by matching documents,
+                      viewing information trails, and handling multiple
+                      currencies.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+            <div class="project-item">
+              <div class="project-img">
+               <img src="img/7076235.png.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Centralize purchasing processes by managing detailed data in a
+                  user-friendly interface. View account balance and purchase
+                  analyses while maintaining detailed item purchasing
+                  information with price lists and tax information.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Master data management</h4>
+                    <p class="m-0 text-white">
+                      Manage cash flow, track fixed assets, control budgets, and
+                      monitor project costs with greater accuracy and
+                      efficiency.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+            <div class="project-item">
+              <div class="project-img"> -->
+                <!-- <img src="img/blog-1.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Benefit from real-time synchronization of goods receipts and
+                  inventory levels in the warehouse to perform purchase planning
+                  with ease and create an accounts payable invoice automatically
+                  from a purchase order or goods receipt.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">
+                      Warehouse and accounting integration
+                    </h4>
+                    <p class="m-0 text-white">
+                      Simplify the management of your fixed assets with a
+                      virtual function, eliminating the need for repetitive
+                      manual data entry.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+            <div class="project-item">
+              <div class="project-img"> -->
+                <!-- <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Lower costs and optimize your supply-chain relationships.
+                  Process accounts payable invoices, cancellations, and credit
+                  memos with a purchase order reference; plan material needs;
+                  and schedule purchases accordingly.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Accounts payable</h4>
+                    <p class="m-0 text-white">
+                      Process reconciliations, bank statements, and payments
+                      faster through various methods including check, cash, and
+                      bank transfers.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+            <div class="project-item">
+              <div class="project-img"> -->
+                <!-- <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Generate integrated reports with real-time data and display
+                  them in various report formats or dashboards to gain an
+                  overview of what matters most to your business, whether you’re
+                  using your desktop or your mobile device.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Reporting</h4>
+                    <p class="m-0 text-white">
+                      Create standard or customized reports from real-time data
+                      to improve your business planning and audit review
+                      processes.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
+    <!-- End Purchasing and Inventory Control -->
+
+    <!-- starts Sales and Customer Management -->
+    <!-- <div class="container-fluid project py-5 my-5">
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeIn"
+          data-wow-delay=".3s"
+          style="max-width: 600px"
+        >
+          <img
+            src="img/sap-sales.png"
+            class="img-fluid w-100 h-100 rounded-pill"
+            alt=""
+          />
+          <a
+            href="https://www.youtube.com/watch?v=EWo1ibCYJio"
+            class="btn btn-secondary rounded-pill px-2 py-2 text-secondary"
+            target="_blank"
+          >
+            <button>Watch the video</button>
+          </a>
+
+          <h5 class="text-primary">Sales and Customer Management</h5>
+          <h6>
+            Oversee the entire sales process and customer lifecycle more
+            efficiently – from initial contact to final sale, after-sales
+            service, and support.
+          </h6>
+        </div>
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+            <div class="project-item">
+              <div class="project-img">
+                <p>
+                  Track all sales opportunities and lead activities throughout
+                  the sales cycle, from the first contact to deal closing.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">
+                      Sales and opportunity management
+                    </h4>
+                    <p class="m-0 text-white">
+                      Automate the handling of all key accounting processes such
+                      as journal entries, accounts receivable and accounts
+                      payable.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+            <div class="project-item">
+              <div class="project-img"> -->
+                <!-- <img src="img/7076235.png.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Create, manage, and analyze marketing activities to turn
+                  prospects into customers and grow sales and profitability.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">
+                      Marketing campaign management
+                    </h4>
+                    <p class="m-0 text-white">
+                      Manage cash flow, track fixed assets, control budgets, and
+                      monitor project costs with greater accuracy and
+                      efficiency.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+            <div class="project-item">
+              <div class="project-img"> -->
+                <!-- <img src="img/blog-1.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Store all critical customer data in one place by synchronizing
+                  and managing customer contacts stored in Microsoft Outlook.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Customer management</h4>
+                    <p class="m-0 text-white">
+                      Simplify the management of your fixed assets with a
+                      virtual function, eliminating the need for repetitive
+                      manual data entry.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+            <div class="project-item">
+              <div class="project-img"> -->
+                <!-- <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Craft and manage warranty contracts and service agreements
+                  efficiently, and enter and respond to service calls quickly.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Service management</h4>
+                    <p class="m-0 text-white">
+                      Process reconciliations, bank statements, and payments
+                      faster through various methods including check, cash, and
+                      bank transfers.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+            <div class="project-item">
+              <div class="project-img"> -->
+                <!-- <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Design detailed reports on all aspects of the sales process –
+                  from forecasting to pipeline tracking – by using templates.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Reporting and analysis</h4>
+                    <p class="m-0 text-white">
+                      Create standard or customized reports from real-time data
+                      to improve your business planning and audit review
+                      processes.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+            <div class="project-item">
+              <div class="project-img"> -->
+                <!-- <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Empower your entire sales organization to manage information
+                  on the move anytime, anywhere, and on any mobile device.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Mobile sales</h4>
+                    <p class="m-0 text-white">
+                      Generate integrated reports with real-time data and
+                      display them in various report formats or dashboards to
+                      gain an overview of what matters most to your business,
+                      whether you’re using your desktop or your mobile device.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Sales and Customer Management -->
+
+    <!-- starts Accurate Real-Time Reporting & Analytics -->
+    <!-- <div class="container-fluid project py-5 my-5">
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeIn"
+          data-wow-delay=".3s"
+          style="max-width: 700px"
+        >
+          <img
+            src="img/05_SAP-Analytics-Cloud.webp"
+            class="img-fluid w-100 rounded-circle"
+            alt=""
+          />
+
+          <h6 class="text-primary">
+            Next-generation Business Intelligence, Planning and Predictive
+            Analytics, Learn about the simple and effective cloud solution that
+            combines business intelligence, predictive analytics, and planning
+            functions.
+          </h6>
+        </div>
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+            <div class="project-item">
+              <div class="project-img">
+                <p>
+                  Design intuitive, interactive dashboards and reports that
+                  answer your most pressing questions. Managers can also track
+                  revenues, costs, and cash flow accurately; assess performance;
+                  and take swift corrective action.
+                </p>
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Dashboards and reports</h4>
+                    <p class="m-0 text-white">
+                      Design intuitive, interactive dashboards and reports that
+                      answer your most pressing questions. Managers can also
+                      track revenues, costs, and cash flow accurately; assess
+                      performance; and take swift corrective action.
+                    </p>
+                  </a>
+                </div>
+              </div> -->
+            <!-- </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+            <div class="project-item">
+              <div class="project-img"> -->
+                <!-- <img src="img/7076235.png.jpg" class="img-fluid w-100 rounded" alt=""> -->
+                <!-- <p>
+                  Access information faster and evaluate it with powerful
+                  analytics in real-time. With SAP Business One you can simplify
+                  data searching and the on-demand creation of standard or ad
+                  hoc reports.
+                </p>
+
+                <div class="project-content">
+                  <a href="#" class="text-center">
+                    <h4 class="text-secondary">Real-time analytics</h4>
+                    <p class="m-0 text-white">
+                      Manage cash flow, track fixed assets, control budgets, and
+                      monitor project costs with greater accuracy and
+                      efficiency.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- end Accurate Real-Time Reporting & Analytics -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+      <div class="container pt-5 pb-4">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <a href="index.html">
+              <img src="img/logo.png" />
+              <h1 class="text-white fw-bold d-block"></h1>
+            </a>
+            <p class="mt-4 text-light">
+              CyberCaves is a SAP development and Implementation partner company
+              to Grow without limits.
+            </p>
+            <div class="d-flex hightech-link">
+              <a
+                href=""
+                class="btn-light nav-fill btn btn-square rounded-circle me-2"
+                ><i class="fab fa-facebook-f text-primary"></i
+              ></a>
+              <a
+                href=""
+                class="btn-light nav-fill btn btn-square rounded-circle me-2"
+                ><i class="fab fa-twitter text-primary"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/cybercaves"
+                class="bg-light nav-fill btn btn-sm-square rounded-circle"
+                ><i class="fab fa-instagram text-primary"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/cybercaves"
+                class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"
+                ><i class="fab fa-linkedin-in text-primary"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="h3 text-secondary">Short Link</a>
+            <div class="mt-4 d-flex flex-column short-link">
+              <a href="" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i>About
+                us</a
+              >
+              <a href="contact.html" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i>Contact
+                us</a
+              >
+              <a href="" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i>Our
+                Services</a
+              >
+              <a href="" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i>Our
+                Projects</a
+              >
+              <a href="" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i>Latest
+                Blog</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="h3 text-secondary">Help Link</a>
+            <div class="mt-4 d-flex flex-column help-link">
+              <a href="" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of
+                use</a
+              >
+              <a href="" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i>Privacy
+                Policy</a
+              >
+              <a href="" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a
+              >
+              <a href="" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a
+              >
+              <a href="contact.html" class="mb-2 text-white"
+                ><i class="fas fa-angle-right text-secondary me-2"></i
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="h3 text-secondary">Contact Us</a>
+            <div class="text-white mt-4 d-flex flex-column contact-link">
+              <a href="#" class="pb-3 text-light border-bottom border-primary"
+                ><i class="fas fa-map-marker-alt text-secondary me-2"></i>
+                Hyderabad</a
+              >
+              <a href="#" class="py-3 text-light border-bottom border-primary"
+                ><i class="fas fa-phone-alt text-secondary me-2"></i> +91
+                9948410113</a
+              >
+              <a href="#" class="py-3 text-light border-bottom border-primary"
+                ><i class="fas fa-envelope text-secondary me-2"></i>
+                ceo@cybercaves.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <hr class="text-light mt-5 mb-4" />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <span class="text-light"
+              ><a href="#" class="text-secondary"
+                ><i class="fas fa-copyright text-secondary me-2"></i>Your Site
+                Name</a
+              >, All right reserved.</span
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            <span class="text-light">Designed By@Suji</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up text-white"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
