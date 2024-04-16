@@ -44,6 +44,42 @@
 .search-icon {
   padding-left: 10px;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+  padding: 5px 10px;
+  background: #fff;
+  border-radius: 20px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.box:hover input {
+  width: 250px;
+}
+.box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+.box a .fas {
+  color: #1daf;
+  font-size: 18px;
+}
+/* body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1daf;
+} */
 
 .btn-lg-square {
   width: 58px;
@@ -113,13 +149,13 @@
 
 /*** Navbar Start ***/
 .navbar .navbar-nav {
-  padding: 15px 0;
+  padding: 12px 0;
 }
 
 .navbar .navbar-nav .nav-link {
   padding: 10px;
   color: var(--bs-white);
-  font-size: 18px;
+  font-size: 16px;
   outline: none;
 }
 
@@ -155,6 +191,50 @@
   transition: 0.5s;
   opacity: 1;
 }
+
+/* .link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #777;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdown.active > .link,
+.link:hover {
+  color: black;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + .25rem);
+  background-color: white;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link1 + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+} */
 
 /*** Navbar End ***/
 
@@ -619,7 +699,6 @@
 
 /*** Testimonial End ***/
 
-`
 /*** Contact Start ***/
 .contact-detail::before {
   position: absolute;
@@ -631,7 +710,7 @@
   background: linear-gradient(rgb(210, 243, 235, 1), rgba(230, 250, 245, 0.3)),
     url(../img/background.jpg) center center no-repeat;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 20px;
   z-index: -1;
 }
 
@@ -778,7 +857,7 @@
 }
 
 .testimonial-item img {
-  width: 60px !important;
+  width: 40px !important;
   height: 30px !important;
   border-radius: 30px;
 }
@@ -827,7 +906,7 @@
 }
 
 /*** Contact ***/
-@media (min-width: 992px) {
+@media (min-width: 992.98px) {
   .contact-info::after {
     position: absolute;
     content: '';
@@ -839,7 +918,7 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992.98px) {
   .contact-info::after {
     position: absolute;
     content: '';
@@ -852,13 +931,13 @@
 }
 
 /*** Footer ***/
-.footer {
+/* .footer {
   background: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
     url(../img/AdobeStock_Preview.jpg) center center no-repeat;
   background-size: contain;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992.98px) {
   .footer::after {
     position: absolute;
     content: '';
@@ -868,7 +947,7 @@
     left: 20%;
     border-left: 1px dashed rgba(6, 21, 43, 0.863);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Why Choose Us Section
@@ -965,20 +1044,15 @@
 
 /* ************************** */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.wrapper {
+/* .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #343536;
+  background-color: #abb2b8;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-}
+} */
 .wrapper {
   padding: 40px;
   display: flex;
@@ -993,7 +1067,7 @@
   background-color: #222;
   color: #2dc5f3;
   box-shadow: inset -2px -2px 5px rgba(9, 232, 248, 0.776),
-    inset 3px 3px 5px rgba(81, 174, 224, 0.07);
+    inset 3px 3px 5px rgba(213, 223, 229, 0.07);
   transition: all 0.6s ease-in-out;
 }
 .box-area .icon-area {
@@ -1030,26 +1104,25 @@
 @media (max-width: 767px) {
   .box-area:hover {
     transform: scale(1);
-  }
-}
-
     visibility: visible;
     animation-name: fadeInUp;
+  }
 }
 .pr_90 {
-    padding-right: 90px;
+  padding-right: 90px;
 }
 .pl_90 {
-    padding-left: 90px;
+  padding-left: 90px;
 }
 .fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
-/* @media (min-width: 992px)
-.col-md-7 {
+
+ @media (min-width: 992px)
+  .col-md-7 {
     width: 58.33333333%;
-} */
+}
 
 
 #call-to-action {
@@ -1086,15 +1159,15 @@
 #call-to-action .cta-btn:hover {
   background: #18d26e;
   border: 2px solid #5acfef;
-}
+} 
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 50vh;
-  background: url("../img/sap-addon.png") center center;
+  height: 40vh;
+  background: url('../img/sr.png') center center;
   background-size: cover;
   position: relative;
 }
@@ -1103,23 +1176,24 @@
   padding-top: 80px;
 }
 
-
-#sr {
+#hero1 {
   width: 100%;
   height: 20vh;
-  background: url("../img/icons/5bd0bdc12d414-wallpaper-preview.jpg") center center;
+  background: url('../img/icons/5bd0bdc12d414-wallpaper-preview.jpg') center
+    center;
   background-size: cover;
   position: relative;
 }
 
-#sr .container {
+#hero1 .container {
   padding-top: 10px;
 }
 
 #call-to-juni {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/icons/orange-1536x1022.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/icons/orange-1536x1022.jpg) fixed center center;
   background-size: cover;
-  padding: 150px 0;
+  padding: 45px 0;
 }
 
 #call-to-juni h3 {
@@ -1132,7 +1206,7 @@
   color: #ffffff;
 }
 #call-to-juni .cta-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -1154,7 +1228,8 @@
 
 /* industries */
 #call-to-react {
-  background: linear-gradient(rgba(24, 110, 84, 0.1), rgba(0, 0, 0, 0.1)), url(../img/295288_HeroL-3840x1044.webp) fixed center center;
+  background: linear-gradient(rgba(24, 110, 84, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/295288_HeroL-3840x1044.webp) fixed center center;
   background-size: cover;
   padding: 150px 0;
 }
@@ -1169,8 +1244,8 @@
   color: #ffffff;
 }
 #call-to-react .cta-btn {
-  font-family: "Montserrat", sans-serif;
-  text-transform:capitalize;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1182,12 +1257,1883 @@
   border: 3px solid #ffffff;
   color: #fff;
   background-color: #230bab;
-
 }
 
 #call-to-react .cta-btn:hover {
   background: #630e51;
   border: 3px solid #5acfef;
+}
+
+/* why cybercaves info */
+
+.why-ananth ul li {
+  width: 50%;
+  float: left;
+  position: relative;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  padding-left: 55px;
+  font-size: 17px;
+  font-weight: bold;
+  background: 0 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  outline: 0;
+}
+
+/* user agent stylesheet */
+
+why-ananth .icon {
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+.vc_column_container {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 768px) .vc_col-sm-6 {
+  width: 50%;
+}
+@media (min-width: 768px) .vc_col-sm-1,
+  .vc_col-sm-10,
+  .vc_col-sm-11,
+  .vc_col-sm-12,
+  .vc_col-sm-2,
+  .vc_col-sm-3,
+  .vc_col-sm-4,
+  .vc_col-sm-5,
+  .vc_col-sm-6,
+  .vc_col-sm-7,
+  .vc_col-sm-8,
+  .vc_col-sm-9 {
+  float: left;
+}
+.vc_col-lg-1,
+.vc_col-lg-10,
+.vc_col-lg-11,
+.vc_col-lg-12,
+.vc_col-lg-2,
+.vc_col-lg-3,
+.vc_col-lg-4,
+.vc_col-lg-5,
+.vc_col-lg-6,
+.vc_col-lg-7,
+.vc_col-lg-8,
+.vc_col-lg-9,
+.vc_col-md-1,
+.vc_col-md-10,
+.vc_col-md-11,
+.vc_col-md-12,
+.vc_col-md-2,
+.vc_col-md-3,
+.vc_col-md-4,
+.vc_col-md-5,
+.vc_col-md-6,
+.vc_col-md-7,
+.vc_col-md-8,
+.vc_col-md-9,
+.vc_col-sm-1,
+.vc_col-sm-10,
+.vc_col-sm-11,
+.vc_col-sm-12,
+.vc_col-sm-2,
+.vc_col-sm-3,
+.vc_col-sm-4,
+.vc_col-sm-5,
+.vc_col-sm-6,
+.vc_col-sm-7,
+.vc_col-sm-8,
+.vc_col-sm-9,
+.vc_col-xs-1,
+.vc_col-xs-10,
+.vc_col-xs-11,
+.vc_col-xs-12,
+.vc_col-xs-2,
+.vc_col-xs-3,
+.vc_col-xs-4,
+.vc_col-xs-5,
+.vc_col-xs-6,
+.vc_col-xs-7,
+.vc_col-xs-8,
+.vc_col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.vc_column_container {
+  width: 100%;
+}
+.section-img.wpb_column.vc_column_container.vc_col-sm-6 {
+}
+.wpb_single_image .vc_single_image-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+a,
+div,
+li,
+span {
+  -webkit-tap-highlight-color: transparent;
+}
+a,
+button,
+div,
+input,
+li,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+big,
+blockquote,
+body,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+u,
+ul,
+var {
+  background: 0 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  outline: 0;
+}
+user agent stylesheet div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.why-ananth .icon .icon2 {
+  display: inline-block;
+  background: url(https://ananthinfo.com/wp-content/uploads/2021/03/experience.png)
+    no-repeat 0 0;
+  padding-left: 40px;
+}
+.why-ananth .icon {
+  text-align: justify;
+  font-weight: bold;
+  font-size: 1;
+}
+.vc_figure {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  max-width: 100%;
+}
+.wpb_single_image .vc_figure {
+  max-width: 100%;
+}
+.wpb_single_image.vc_align_center {
+  text-align: right;
+}
+why-ananth .why {
+  width: 100%;
+  float: left;
+  position: absolute;
+}
+.why-ananth ul li {
+  width: 35%;
+  float: left;
+  position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding-left: 5px;
+  font-size: 17.5px;
+  font-weight: bold;
+}
+
+.why-ananth ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+ol,
+ul {
+  list-style-position: inside;
+}
+user agent stylesheet ul {
+  list-style-type: disc;
+}
+.qodef-content-aligment-left {
+  text-align: left;
+}
+ {
+  text-align: left;
+}
+#content .wpb_alert p:last-child,
+#content .wpb_text_column :last-child,
+#content .wpb_text_column p:last-child,
+.wpb_alert p:last-child,
+.wpb_text_column :last-child,
+.wpb_text_column p:last-child {
+  margin-bottom: 0;
+}
+h2.hdg2 {
+  margin-bottom: 40px !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+h1,
+h1 a,
+h2,
+h2 a {
+  color: #202020;
+}
+h2 {
+  font-size: 34px;
+  line-height: 1.284em;
+  font-weight: 700;
+  font-family: Raleway, sans-serif;
+}
+
+user agent stylesheet h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+.wpb_single_image img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+.wp-caption,
+img {
+  max-width: 100%;
+  height: auto;
+}
+img[Attributes Style] {
+  width: 200px;
+  aspect-ratio: auto 200 / 200;
+  height: 200px;
+}
+user agent stylesheet img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+#call-to-fm {
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/sr.png) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+}
+
+#call-to-fm h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-fm p {
+  color: #ffffff;
+}
+
+#call-to-fm .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-fm .cta-btn:hover {
+  background: #2295ca;
+  border: 2px solid #5acfef;
+} 
+
+
+#call-to-as {
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/Aerospace\ and\ Defence.png) fixed center center;
+  background-size: cover;
+  padding: 50px 0;
+  height: 350px;
+}
+
+#call-to-as h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: normal;
+ text-align: justify;
+
   
+}
+
+#call-to-as p {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: justify;
+}
+
+#call-to-as .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+
+elementor-widget-wrap>.elementor-element {
+    width: 100%;
+}
+.elementor-element {
+    --widgets-spacing: 20px 20px;
+}
+.elementor-element, .elementor-lightbox {
+    --swiper-theme-color: #000;
+    --swiper-navigation-size: 44px;
+    --swiper-pagination-bullet-size: 6px;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+.elementor-widget {
+    position: relative;
+}
+.elementor-align-center {
+    text-align: center;
+}
+.elementor-element:where(.e-con-full,.elementor-widget) {
+    flex-direction: var(--flex-direction);
+        flex-wrap: var(--flex-wrap);
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+    align-content: var(--align-content);
+    gap: var(--gap);
+}
+
+
+
+.elementor-21386 .elementor-element.elementor-element-5978d89 .ct-tabs .ct-tabs-title .ct-tab-title {
+    color: #000000;
+}
+.ct-tabs3 .ct-tabs-title .ct-tab-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #090909;
+    position: relative;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.ct-tabs3 .ct-tabs-title {
+    border-top: 0px solid #efeff2;
+    border-bottom: 1px solid #efeff2;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
+p {
+    margin-bottom: 15px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/* Automotive */
+#call-to-auto {
+  background: linear-gradient(rgba(52, 51, 51, 0.658), rgba(109, 108, 108, 0.338)), url(../img/automotive.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 350px;
 
 }
+
+#call-to-auto h3 {
+  color: hsl(204, 45%, 98%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-auto p {
+  color: hsla(180, 41%, 95%, 0.961);
+  text-align: justify;
+  font-size: 25px;
+ 
+  
+}
+
+#call-to-auto .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-auto .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Automotive End */
+
+
+/* Banking start */
+#call-to-bank {
+  background: linear-gradient(rgba(253, 250, 250, 0.233), rgba(248, 244, 244, 0.196)), url(../img/industries/banking.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 350px;
+
+}
+
+#call-to-bank h3 {
+  color: hsl(210, 91%, 9%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-bank p {
+  color: hsla(235, 86%, 5%, 0.961);
+  text-align: justify;
+  font-size: 22px;
+  
+ 
+  
+}
+
+#call-to-bank .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-bank .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Banking Ebnd  */
+
+/* Building meterial start */
+#call-to-bm {
+  background: linear-gradient(rgba(253, 250, 250, 0.233), rgba(248, 244, 244, 0.196)), url(../img/Building\ Materials.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 350px;
+
+}
+
+#call-to-bm h3 {
+  color: hsl(212, 93%, 5%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-bm p {
+  color: hsla(235, 92%, 10%, 0.961);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+  
+ 
+  
+}
+
+#call-to-bm .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-bm .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Building meterial End  */
+
+
+/* Agribusiness start  */
+#call-to-ab {
+  background: linear-gradient(rgba(233, 229, 229, 0.432), rgba(248, 244, 244, 0.196)), url(../img/agribusiness.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 350px;
+
+}
+
+#call-to-ab h3 {
+  color: hsl(247, 93%, 11%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-ab p {
+  color: hsl(235, 84%, 12%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+  
+ 
+  
+}
+
+#call-to-ab .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-ab .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Agribusiness end  */
+
+/* cargo transportation & logistics starts */
+#call-to-ctl {
+  background: linear-gradient(rgba(233, 229, 229, 0.432), rgba(248, 244, 244, 0.196)), url(../img/cargo\ transportation\ logistics.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 500px;
+
+}
+
+#call-to-ctl h3 {
+  color: hsl(247, 93%, 11%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-ctl p {
+  color: hsl(235, 84%, 12%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+  
+ 
+  
+}
+
+#call-to-ctl .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-ctl .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* cargo transportation & logistics end */
+
+
+/* chemicals starts */
+#call-to-cc {
+  background: linear-gradient(rgb(82, 155, 238), rgba(31, 30, 30, 0)), url(../img/chemicals1.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 350px;
+
+}
+
+#call-to-cc h3 {
+  color: hsl(248, 67%, 98%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-cc p {
+  color: hsl(233, 31%, 94%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+  
+ 
+  
+}
+
+#call-to-cc .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-cc .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* chemicals end  */
+
+/* consumer products starts  */
+#call-to-cp {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../img/consumer\ products.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 350px;
+
+}
+
+#call-to-cp h3 {
+  color: hsl(248, 67%, 98%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-cp p {
+  color: hsl(233, 31%, 94%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+}
+
+#call-to-cp .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-cp .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* consumer products end  */
+
+ /* Defence security starts  */
+#call-to-ds {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../img/defence\ &\ security.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 350px;
+
+}
+
+#call-to-ds h3 {
+  color: hsl(248, 67%, 98%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-ds p {
+  color: hsl(233, 31%, 94%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+}
+
+#call-to-ds .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-ds .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Defence security end  */
+
+
+/* Engineering construction and operations starts */
+#call-to-eco {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../img/engineering\ construction\ operations.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 400px;
+
+}
+
+#call-to-eco h3 {
+  color: hsl(240, 2%, 9%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-eco p {
+  color: hsl(240, 5%, 4%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+}
+
+#call-to-eco .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-eco .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Engineering construction and operations ends */
+
+
+/* fashion starts  */
+#call-to-fs {
+  background: linear-gradient(rgb(241, 238, 238), rgba(16, 15, 15, 0)), url(../img/fashion.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-fs h3 {
+  color: hsl(240, 2%, 9%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-fs p {
+  color: hsl(240, 5%, 4%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+}
+
+#call-to-fs .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-fs .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* fashion end  */
+
+/* government starts  */
+#call-to-govt {
+  background: linear-gradient(rgb(241, 238, 238), rgba(16, 15, 15, 0)), url(../img/govt.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-govt h3 {
+  color: hsl(240, 2%, 9%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-govt p {
+  color: hsl(240, 5%, 4%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+}
+
+#call-to-govt .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-govt .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* government end  */
+
+
+/* Health care starts  */
+#call-to-hc {
+  background: linear-gradient(rgba(65, 63, 63, 0.023), rgba(31, 27, 27, 0)), url(../img/hc9.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-hc h3 {
+  color: hsl(240, 2%, 9%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-hc p {
+  color: hsl(240, 5%, 4%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#090909;
+  
+}
+
+#call-to-hc .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-hc .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Health Care end  */
+
+
+/* High Tech starts  */
+#call-to-ht {
+  background: linear-gradient(rgba(65, 63, 63, 0.023), rgba(31, 27, 27, 0)), url(../img/hightech.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-ht h3 {
+  color: hsl(240, 94%, 13%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-ht p {
+  color: hsl(240, 89%, 11%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;
+  
+}
+
+#call-to-ht .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-ht .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* High tech end  */
+
+
+/* Higher Education & research starts  */
+#call-to-her {
+  background: linear-gradient(rgba(65, 63, 63, 0.023), rgba(31, 27, 27, 0)), url(../img/highereducation&research.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-her h3 {
+  color: hsl(240, 41%, 97%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-her p {
+  color: hsl(240, 15%, 95%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;
+  
+}
+
+#call-to-her .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-her .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* higher education &reserach end  */
+
+
+/* Industrail Manufactring starts  */
+#call-to-im {
+  background: linear-gradient(rgba(15, 14, 14, 0.023), rgba(31, 27, 27, 0)), url(../img/industrial\ manufacturing.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-im h3 {
+  color: hsl(240, 6%, 7%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-im p {
+  color: hsl(240, 2%, 8%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;
+  
+}
+
+#call-to-im .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-im .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Industrial manufactring end  */
+
+
+/* Insurance starts  */
+#call-to-ir {
+  background: linear-gradient(rgba(15, 14, 14, 0.023), rgba(31, 27, 27, 0)), url(../img/insurance\ logo.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-ir h3 {
+  color: hsl(240, 6%, 7%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-ir p {
+  color: hsl(240, 2%, 8%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;
+  
+}
+
+#call-to-ir .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-ir .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Insurance end  */
+
+/* Life Sciences starts  */
+#call-to-ls {
+  background: linear-gradient(rgba(180, 189, 227, 0.653), rgba(31, 27, 27, 0)), url(../img/ls1.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-ls h3 {
+  color: hsl(240, 94%, 13%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-ls p {
+  color: hsl(240, 90%, 8%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;
+  
+}
+
+#call-to-ls .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-ls .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* life sciences end  */
+
+/* Media Enetertainment starts  */
+#call-to-me {
+  background: linear-gradient(rgba(33, 33, 33, 0.774), rgba(248, 244, 244, 0)), url(../img/media\ entertainment.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-me h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-me p {
+  color: hsl(0, 0%, 100%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;
+  
+}
+
+#call-to-me .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-me .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Media entertainment end  */
+
+/* Mill Products starts  */
+#call-to-mp {
+  background: linear-gradient(rgba(89, 87, 87, 0.436), rgba(11, 10, 10, 0)), url(../img/millproducts.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-mp h3 {
+  color: hsl(249, 88%, 3%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-mp p {
+  color: hsl(0, 6%, 10%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;
+  
+}
+
+#call-to-mp .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-mp .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Mill Products end  */
+
+/* Mining starts  */
+#call-to-mg {
+  background: linear-gradient(rgba(218, 215, 215, 0), rgba(11, 10, 10, 0)), url(../img/mining.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-mg h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-mg p {
+  color: hsl(0, 0%, 100%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;
+  
+}
+
+#call-to-mg .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-mg .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* mining ends  */
+
+
+/* Oil ,Gas & Energy starts  */
+#call-to-oge {
+  background: linear-gradient(rgba(218, 215, 215, 0), rgba(11, 10, 10, 0)), url(../img/oilgas&energy.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 420px;
+
+}
+
+#call-to-oge h3 {
+  color: hsl(243, 85%, 10%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-oge p {
+  color: hsl(24, 87%, 12%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;3
+  
+}
+
+#call-to-oge .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-oge .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Oil Gas & energy ends  */
+
+
+/* Passenger Travel &leisure starts */
+#call-to-ptl {
+  background: linear-gradient(rgba(218, 215, 215, 0), rgba(11, 10, 10, 0)), url(../img/passengertravel&leisure.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 400px;
+
+}
+
+#call-to-ptl h3 {
+  color: hsl(243, 85%, 10%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-ptl p {
+  color: hsl(24, 87%, 12%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;3
+  
+}
+
+#call-to-ptl .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-ptl .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Passenger Travel &leisure end  */
+
+/* Professional Services Starts  */
+#call-to-ps {
+  background: linear-gradient(rgba(218, 215, 215, 0), rgba(11, 10, 10, 0)), url(../img/professional-services.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 400px;
+
+}
+
+#call-to-ps h3 {
+  color: hsl(243, 85%, 10%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-ps p {
+  color: hsl(24, 87%, 12%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;3
+  
+}
+
+#call-to-ps .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-ps .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Professsional Services end  */
+
+/* Real Estate starts  */
+#call-to-re {
+  background: linear-gradient(rgba(19, 19, 19, 0), rgba(12, 12, 12, 0)), url(../img/real-estate.jpeg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 400px;
+
+}
+
+#call-to-re h3 {
+  color: hsl(0, 0%, 0%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-re p {
+  color: hsl(0, 100%, 0%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#080335;3
+  
+}
+
+#call-to-re .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-re .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Real Estate ends  */
+
+/* Retail starts  */
+#call-to-rl {
+  background: linear-gradient(rgba(226, 221, 221, 0.518), rgba(12, 12, 12, 0)), url(../img/retail.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 400px;
+
+}
+
+#call-to-rl h3 {
+  color: hsl(229, 90%, 15%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-rl p {
+  color: hsl(234, 95%, 8%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#070139;3
+  
+}
+
+#call-to-rl .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-rl .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Retail ends  */
+
+/* Sports starts  */
+#call-to-ss {
+  background: linear-gradient(rgba(240, 238, 238, 0), rgba(12, 12, 12, 0)), url(../img/ss1.jpg) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 400px;
+
+}
+
+#call-to-ss h3 {
+  color: hsl(245, 92%, 5%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-ss p {
+  color: hsl(0, 0%, 100%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#070139;3
+  
+}
+
+#call-to-ss .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-ss .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Sports ends  */
+
+/* Telecommunications starts  */
+#call-to-tc {
+  background: linear-gradient(rgba(210, 221, 242, 0.742), rgba(0, 0, 0, 0)), url(../img/tele-communications.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 450px;
+
+}
+
+#call-to-tc h3 {
+  color: hsl(245, 92%, 5%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-tc p {
+  color: hsl(0, 0%, 0%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#03010f;3
+  
+}
+
+#call-to-tc .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-tc .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+
+/* Telecommunications end  */
+
+/* Utilities starts  */
+#call-to-us {
+  background: linear-gradient(rgba(210, 221, 242, 0.742), rgba(0, 0, 0, 0)), url(../img/utilities.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 450px;
+
+}
+
+#call-to-us h3 {
+  color: hsl(245, 92%, 5%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-us p {
+  color: hsl(0, 0%, 0%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#03010f;3
+  
+}
+
+#call-to-us .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-us .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Utilities end  */
+
+/* Wholesale Distrubution starts  */
+#call-to-wsd {
+  background: linear-gradient(rgba(210, 221, 242, 0.742), rgba(0, 0, 0, 0)), url(../img/wholesaledistrubution.webp) fixed center center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 1580px;
+  height: 450px;
+
+}
+
+#call-to-wsd h3 {
+  color: hsl(245, 92%, 5%);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 50px;
+}
+
+#call-to-wsd p {
+  color: hsl(0, 0%, 0%);
+  text-align: justify;
+  font-size: 22px;
+  text-decoration:#03010f;3
+  
+}
+
+#call-to-wsd .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-wsd .cta-btn:hover {
+  background: #2295ca;
+  border: 4px solid #5acfef;
+} 
+/* Wholesale Distribution end  */
